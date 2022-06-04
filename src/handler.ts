@@ -13,7 +13,7 @@ app.get('/BingSiteAuth.xml', async (ctx) => {
       `<?xml version="1.0"?>
       <users>
         <user>${bing_auth}</user>
-      </users>`,
+      </users>`.replace(/^\s+/gm, ''),
       200,
       {
         'Content-Type': 'text/xml; charset=utf-8',
