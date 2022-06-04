@@ -1,5 +1,5 @@
-import { handleRequest } from './handler'
+import app from './handler'
 
 addEventListener('fetch', (event: FetchEvent) => {
-  event.respondWith(handleRequest(event))
+  event.respondWith(app.handleEvent(event))
 })

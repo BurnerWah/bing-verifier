@@ -1,1 +1,1 @@
-declare const BING_SITE_AUTHS: KVNamespace
+declare const BING_SITE_AUTH: string

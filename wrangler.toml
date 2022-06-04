@@ -12,7 +12,5 @@ command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
 
-[[kv_namespaces]]
-binding = "BING_SITE_AUTHS"
-id = "96890ebc919e4888952814ad596e2bd9"
-preview_id = "96890ebc919e4888952814ad596e2bd9"
+# [secrets]
+# BING_SITE_AUTH
