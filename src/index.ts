@@ -1,5 +1,11 @@
-import app from './handler'
+import app from './app'
 
-addEventListener('fetch', (event: FetchEvent) => {
-  event.respondWith(app.handleEvent(event))
-})
+export interface Env {
+  BING_SITE_AUTH: string
+}
+
+export default {
+  fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    return app.fetch(request, env, ctx)
+  },
+}
