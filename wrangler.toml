@@ -1,16 +1,6 @@
 name = "bing-verifier"
-type = "javascript"
-zone_id = ""
-account_id = ""
-route = ""
-workers_dev = true
-compatibility_date = "2022-06-04"
-
-[build]
-command = "npm install && npm run build"
-
-[build.upload]
-format = "service-worker"
+main = "src/index.ts"
+compatibility_date = "2022-07-05"
 
 # [secrets]
 # BING_SITE_AUTH
