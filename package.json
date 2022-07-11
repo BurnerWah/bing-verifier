@@ -27,6 +27,6 @@
     "lint:eslint": "eslint --max-warnings=0 src"
   },
   "dependencies": {
-    "hono": "^1.6.1"
+    "hono": "^1.6.4"
   }
 }
